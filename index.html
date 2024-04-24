@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form>
+        <h1>Registration Form</h1>
+        <div class="form-box">
+          <input
+            type="text"
+            class="username"
+            id="username"
+            placeholder="Enter username"
+            autocomplete="username"
+            spellcheck="false"
+            aria-label="Username"
+          />
+          <p class="error-text" aria-live="polite">error</p>
+        </div>
+        <div class="form-box form-box-password">
+          <input
+            type="password"
+            class="password"
+            id="password"
+            placeholder="Enter password"
+            autocomplete="new-password"
+            aria-label="Password"
+          />
+          <img
+            src="img/eye.png"
+            class="eye"
+            id="eye-icon"
+            alt="toggle password visibility"
+          />
+          <p class="error-text" aria-live="polite">error</p>
+        </div>
+
+        <div class="form-box">
+          <input
+            type="email"
+            id="email"
+            class="email"
+            placeholder="Enter email"
+            aria-label="Email"
+          />
+          <p class="error-text" aria-live="polite">error</p>
+        </div>
+        <div class="control-buttons">
+          <button type="button" class="clear">Clear</button>
+          <button type="submit" class="send">Send</button>
+        </div>
+        <div class="popup" aria-label="polite">
+          <p class="">The form has been successfully sent</p>
+          <button class="close">Close</button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
